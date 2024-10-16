@@ -7,7 +7,11 @@ Created on Jul 26, 2024
 import mesop as me
 import mesop.labs as mel
 
-from rag import stream_chat
+from rag import RAGEngine
+
+rag_engine = RAGEngine()
+rag_engine.configure('diets')
+
 
 @me.page(
   security_policy=me.SecurityPolicy(
@@ -22,5 +26,5 @@ def page():
 
 
 def respond_to_chat(message: str, history: list[mel.ChatMessage]):
-    for resp in stream_chat(message, history):
+    for resp in rag_engine.stream_chat(message, history):
         yield resp
