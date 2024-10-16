@@ -49,7 +49,7 @@ class RAGEngine(object):
         llm_api_key = os.getenv("LLM_API_KEY")
         embedding_api_key = os.getenv('EMBEDDING_MODEL_API_KEY')
         
-        storage_access_key = self.config['knowledgebase']['access_key']
+        storage_access_key = os.getenv('STORE_ACCESS_KEY']
         
         self.document_store = BlobStorageStore('documents', storage_access_key)
         self.index_store = BlobStorageStore('indexes', storage_access_key)
