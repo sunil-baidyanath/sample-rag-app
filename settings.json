@@ -1,6 +1,14 @@
 {
-	"document_location": "/Users/sunilthakur/documents/",
-	"index_location": "/Users/sunilthakur/indexes/",
+	"knowledgebase": { 
+		"location": "",
+		"indexes": [{
+			"name": "diets",
+			"data_source": {
+				"file_type": "pdf",
+				"location": "Dietary_Guidelines_for_Americans-2020-2025.pdf" 
+			}
+		}]
+	},
 	"embedding": { 
 		"source": "AzureOpenAI",
 		"model": "text-embedding-ada-002",
