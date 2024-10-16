@@ -1,0 +1,17 @@
+azure-common==1.1.28
+azure-core==1.30.0
+azure-identity==1.15.0
+azure-storage-blob==12.23.1
+llama-cloud==0.0.9
+llama-index==0.10.55
+llama-index-core==0.10.55
+llama-index-embeddings-azure-openai==0.1.6
+llama-index-llms-azure-openai==0.1.4
+llama-index-readers-file==0.1.30
+mesop==0.9.4
+PyMuPDF==1.23.25
+PyMuPDFb==1.23.22
+pypdf==4.0.2
+python-dateutil==2.8.2
+python-dotenv==1.0.1
+sentence-transformers==2.3.0
